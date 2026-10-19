@@ -1,0 +1,6 @@
+{
+  "include": ["pstack-agenc/**", ".githooks/**"],
+  "exclude": ["gf2/**", "**/gf2/**", "**/*.log", "**/*.jsonl", "**/*.txt", "**/README.md", "**/CHANGELOG*", "**/LICENSE*", "**/NOTICE*", "docs/**", "**/*.png", "**/*.jpg", "**/*.svg", "**/__pycache__/**", "**/*.pyc", "**/LOCAL.md"],
+  "since": "2026-10-19T15:00:00-05:00",
+  "window_hours": 12
+}
