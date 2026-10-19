@@ -1,0 +1,25 @@
+pstack for AgenC: unofficial adaptation
+=======================================
+
+This folder is a modified copy of pstack by Lauren Tan, taken from the
+cursor/plugins repository (this repo is a fork of it):
+
+  Source:   https://github.com/cursor/plugins/tree/main/pstack
+  Commit:   d457567332aa6989e753ea289f30ea2bfbc80bc0 (pstack version 0.15.28)
+  License:  MIT, see LICENSE (kept verbatim, Copyright (c) 2026 Lauren Tan)
+
+It is not an official release and is not affiliated with or endorsed by the
+pstack author or Cursor.
+
+Changes from upstream pstack/ (everything else is byte-for-byte identical):
+
+  1. plugin.json moved from the plugin root to .agenc-plugin/plugin.json,
+     because AgenC 0.19.9 rejects a root-level manifest.
+  2. The "$schema" key was removed from that manifest, because AgenC 0.19.9
+     rejects unknown keys. All other fields and values are unchanged.
+  3. Added this NOTICE file.
+  4. README.md is replaced by a short AgenC packaging README. The upstream
+     README is unchanged at ../pstack/README.md in this fork.
+
+The .cursor-plugin/plugin.json manifest, skills, agents, docs, assets and
+automations are unchanged.
